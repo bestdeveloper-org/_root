@@ -1,0 +1,135 @@
+
+<script>
+var person = {
+
+    name: "Anand",
+
+    getName: function() {
+
+        return this.name;
+
+    },
+    testReturn: function() {
+        for (var i = 0; i < lista.length; i++) {
+            var persoana = lista[i];
+            if (i < 2) {
+                continue;
+            }
+
+            if (persoana.name === 'rares') {
+                //break;
+                return;
+            }
+
+            console.log(persoana.name);
+        }
+    }
+
+
+}
+// person.prototype.aaa = function()
+// {
+// 	console.log("aaa");
+// }
+//person.aaa();
+
+console.log(person.name)
+
+
+var text = "";
+for (var i = 0; i < 10; i++) {
+    // debugger;
+    text += "incepem sa ioanaam" + i
+}
+//#######################
+//var lista = [{name:"asdf"},{name:"asd"}];
+var lista = [];
+lista.push({ a: 0, name: "clau" });
+lista.push({ a: 1, name: "ioana" });
+lista.push({ a: 2, name: "cata" });
+lista.push({ a: 3, name: "mihai" });
+lista.push({ a: 3, name: "rares" });
+lista.push({ a: 3, name: "adi" });
+lista.push({ a: 3, name: "horatiu" });
+
+for (var i = 0; i < lista.length; i++) {
+    var persoana = lista[i];
+    console.log(persoana.name);
+}
+
+var name = "john";
+for (var i = 0; i < name.length; i++) {
+    var character = name[i];
+    console.log(character);
+}
+
+var arrayFromString = name.split("");
+for (var i = 0; i < arrayFromString.length; i++) {
+    var character = arrayFromString[i];
+    console.log(character);
+}
+
+
+//####################### continue;
+console.clear();
+for (var i = 0; i < lista.length; i++) {
+    var persoana = lista[i];
+    if (i < 2) {
+        continue;
+    }
+
+    if (persoana.name === 'rares') {
+        break;
+        //return;
+    }
+
+    console.log(persoana.name);
+}
+
+console.log("ok");
+
+console.clear();
+
+var rezultat = person.testReturn();
+console.log(rezultat);
+//
+
+var text = "";
+var suma = 0;
+var i = 0;
+while (suma < 5) {
+	var produs = lista[i];
+	suma = suma + produs.a;
+	i++;
+	console.log('mai poti cumpara ' + suma);
+}
+//exercitiu: cum s-ar fi pututu scrie aceste instructiuni cu for in loc de while:
+// Hint: use break;
+
+var text;
+var fruits = "Orange";
+
+switch(fruits) {
+    case "Banana":
+    {
+        text = "Banana is good!";
+        //break;
+    }
+    case "Orange":
+    	text = 'hey';
+        text = "I am not a fan of orange.";
+        //break;
+
+    case "Apple":
+        text = "How you like them apples?";
+        break;
+    default:
+        text = "I have never heard of that fruit...";
+}
+
+console.log(text);
+
+</script>
+
+node.js
+mongo.db

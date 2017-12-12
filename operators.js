@@ -12,7 +12,7 @@ var caine = {
 		}else{
 			console.log(' :(((Ham ');
 		}
-		
+		return 1;
 	},
 	nume: "Canish", 
 	cap: { 
@@ -27,24 +27,15 @@ var caine = {
 
 console.log(caine.latra());
 
-function person(valoareNume)
-{
-	this.name = valoareNume;
-	this.cap = {
-		urechi:2
-	};
-	this.changeEars = function(no)
-	{
-		this.cap.urechi = no;
-	}
-}
 
-console.log(new person());
-//
-var arr = [];
-arr.push(new person('ion'));
-arr.push(new person('maria'));
-console.log(arr);
-arr[0].name = 'John';
-arr[1].changeEars(3);;
-console.log(JSON.stringify(arr));
+// var suma = add(2,4);
+// console.log(suma);
+// console.log(new person());
+// //
+// var arr = [];
+// arr.push(new person('ion'));
+// arr.push(new person('maria'));
+// console.log(arr);
+// arr[0].name = 'John';
+// arr[1].changeEars(3);;
+// console.log(JSON.stringify(arr));
